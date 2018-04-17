@@ -1,9 +1,9 @@
 # packages/lamsconf/www/userinfo.tcl
 
 ad_page_contract {
-    
-    This page return user info in CSV format to LAMS server. 
-    
+
+    This page return user info in CSV format to LAMS server.
+
     @author Ernie Ghiglione (ErnieG@melcoe.mq.edu.au)
     @creation-date 2005-11-23
     @arch-tag: d96fffd1-bbf0-479e-9fc0-92cd09a63568
@@ -43,7 +43,7 @@ set first_name [acs_user::get_element -user_id $username -element first_names]
 set last_name [acs_user::get_element -user_id $username -element last_name]
 set email [acs_user::get_element -user_id $username -element email]   
 
-ns_log Notice "LAMSint: userinfo transfered to LAMS (user_id $username)"
+ns_log Notice "LAMSint: userinfo transferred to LAMS (user_id $username)"
 
 # send it to LAMS
 ReturnHeaders "text/plain"
